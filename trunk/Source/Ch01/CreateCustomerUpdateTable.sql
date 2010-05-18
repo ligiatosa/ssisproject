@@ -1,0 +1,26 @@
+USE AdventureWorksDW2008
+GO
+CREATE TABLE [dbo].[stgDimCustomerUpdates](
+[CustomerAlternateKey] [nvarchar](15) NULL,
+[AddressLine1] [nvarchar](60) NULL,
+[AddressLine2] [nvarchar](60) NULL,
+[BirthDate] [datetime] NULL,
+[CommuteDistance] [nvarchar](15) NULL,
+[DateFirstPurchase] [datetime] NULL,
+[EmailAddress] [nvarchar](50) NULL,
+[EnglishEducation] [nvarchar](40) NULL,
+[EnglishOccupation] [nvarchar](100) NULL,
+[FirstName] [nvarchar](50) NULL,
+[Gender] [nvarchar](1) NULL,
+[GeographyKey] [int] NULL,
+[HouseOwnerFlag] [nvarchar](1) NULL,
+[LastName] [nvarchar](50) NULL,
+[MaritalStatus] [nvarchar](1) NULL,
+[MiddleName] [nvarchar](50) NULL,
+[NumberCarsOwned] [tinyint] NULL,
+[NumberChildrenAtHome] [tinyint] NULL,
+[Phone] [nvarchar](25) NULL,
+[Suffix] [nvarchar](10) NULL,
+[Title] [nvarchar](8) NULL,
+[TotalChildren] [tinyint] NULL,
+[YearlyIncome] [nvarchar](100) NULL) ON [PRIMARY]
