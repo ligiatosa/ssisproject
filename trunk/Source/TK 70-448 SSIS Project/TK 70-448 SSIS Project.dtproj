@@ -73,5 +73,10 @@
       <FullPath>DimPromotion.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Import_Excel_Files.dtsx</Name>
+      <FullPath>Import_Excel_Files.dtsx</FullPath>
+      <References />
+    </DtsPackage>
   </DTSPackages>
 </Project>
