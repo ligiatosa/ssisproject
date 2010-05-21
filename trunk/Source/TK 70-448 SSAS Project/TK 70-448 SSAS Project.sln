@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "TK 70-448 SSAS Project", "TK 70-448 SSAS Project.dwproj", "{13D041C1-BE03-451A-BB96-8571EF95F763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13D041C1-BE03-451A-BB96-8571EF95F763}.Development|Default.ActiveCfg = Development
+		{13D041C1-BE03-451A-BB96-8571EF95F763}.Development|Default.Build.0 = Development
+		{13D041C1-BE03-451A-BB96-8571EF95F763}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
