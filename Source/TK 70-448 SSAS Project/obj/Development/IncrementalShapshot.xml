@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>TK 70-448 SSAS Project</Database>
+    <Server>LPHAN5-1\SQL2K8</Server>
+    <ConnectionString>DataSource=LPHAN5-1\SQL2K8;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>6g32Wj/06WOxpd96CIHXKg==5/20/2010 4:55:41 PM5/20/2010 4:55:41 PM</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2008</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>X1jKPlalF3Yt0jEJP3QgAg==5/21/2010 4:24:55 PM5/20/2010 4:58:23 PM</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2008</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QwGNM/A8umHvOmAdEruA0A==5/21/2010 4:18:31 PM5/20/2010 5:32:40 PM</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KcPWB6kEyAX9GWft045A9w==5/21/2010 10:53:44 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Currency</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kPjBY2RSCsCRLWYQv30Xjg==5/21/2010 11:00:14 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wpOmT1xUHFwRs8fvYS9HIQ==5/21/2010 4:22:20 PM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Sales Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GCKe3jLmcLr/6jFA0uQhZA==5/21/2010 11:11:44 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ee2ilHla364Z7mmMHDnMvA==5/20/2010 5:32:42 PM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Fact Internet Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Yw3tNlyrsjFYntqM8mBKZA==5/21/2010 11:12:27 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <ID>
+          <String>Sales Reason</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g0H2MrBGMEENmnpkV85DDw==5/21/2010 5:06:52 PM5/21/2010 10:44:52 AM</TimeStamp>
+        <ID>
+          <String>Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>y041jo5VEjtzZHHk9N/wlQ==5/21/2010 4:26:25 PM5/21/2010 4:26:23 PM</TimeStamp>
+        <ID>
+          <String>Internet Sales Order Details</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>E7TgkN6Op8S421WVP28ayQ==5/21/2010 5:11:39 PM5/20/2010 5:32:40 PMNozRqXKvsFvhLqHE+qly2Q==5/21/2010 3:58:28 PM5/20/2010 5:32:40 PM</TimeStamp>
+        <ID>
+          <String>Adventure Works</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>+IlH823d9Yh7PYO9RAbYYg==5/20/2010 4:53:09 PM5/20/2010 4:53:08 PM</TimeStamp>
+      <ID>
+        <String>TK 70-448 SSAS Project</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2010-05-21T10:11:51Z</LastDeployed>
+</DeploymentSnapshot>
