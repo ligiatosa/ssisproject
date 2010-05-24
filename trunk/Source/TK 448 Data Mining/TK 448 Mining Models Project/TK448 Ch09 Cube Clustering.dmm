@@ -1,0 +1,313 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9e9e0d67-036f-4c9d-9e43-29e82719e5c3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TK448 Ch09 Cube Clustering</ID>
+  <Name>TK448 Ch09 Cube Clustering</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="1ae491da-68e9-4214-ba32-701a77039378">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>TargetMailCube</CubeID>
+    <CubeDimensionID>TargetMailDim</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="21a56c31-ce18-46e5-ba80-a120ad720a89">
+      <ID>Customer Key</ID>
+      <Name>Customer Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="b8d40513-5140-43e8-a0b9-61a40d225063">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Customer Key</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9e42370a-7ac8-4923-8060-3da875aae923">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="cf97d0c8-355c-4d95-aec0-519d124ae756">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Age</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aa6e1f7d-c7a6-4aae-b60d-c3ce07af0553">
+      <ID>Commute Distance</ID>
+      <Name>Commute Distance</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="e4b690fe-2a24-43ef-98db-68639fca25d7">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Commute Distance</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4344c6f0-b0e3-4928-8b01-ab0c4d47ae31">
+      <ID>English Education</ID>
+      <Name>English Education</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="e2ad72cc-aa2f-4667-a076-9c03f6d5bbc3">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>English Education</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b72d9c72-b426-4611-9f1f-73009f031475">
+      <ID>English Occupation</ID>
+      <Name>English Occupation</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="07d1e656-3ce4-4cf7-ab5c-0d8f34be99c1">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>English Occupation</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="317b0aec-1730-40b2-acba-12dd91d766bc">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="8e84aa56-fad6-4b70-a910-a7f9787a03b3">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Gender</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9687169b-8084-4e92-b72d-5c6d40944cea">
+      <ID>House Owner Flag</ID>
+      <Name>House Owner Flag</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="800f710f-1c3d-4497-9b96-71351576cf0d">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>House Owner Flag</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="92105c2a-6c69-4d12-b6e4-56a0f6284eb3">
+      <ID>Marital Status</ID>
+      <Name>Marital Status</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="43e804bf-6624-4902-bd2b-b148f94656b1">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Marital Status</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7abefae1-cd0f-43df-be95-ecfa8ded9ba7">
+      <ID>Number Cars Owned</ID>
+      <Name>Number Cars Owned</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="0ab028fb-7da9-4ab7-b70c-271c224bef15">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Number Cars Owned</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b0b6bf2e-f518-4695-961a-5ed205a185b2">
+      <ID>Number Children At Home</ID>
+      <Name>Number Children At Home</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="313af131-dddd-42bc-8eeb-4d1a28a8c944">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Number Children At Home</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="023e2168-6bce-4cba-ba10-e67085f4fa45">
+      <ID>Region</ID>
+      <Name>Region</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="65828908-42a0-4042-b3ce-6abc423ed8e2">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Region</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="81d368ec-ae89-485c-adce-f40b1d3e5391">
+      <ID>Total Children</ID>
+      <Name>Total Children</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="48e05092-1b93-4215-89b7-9f1be1589576">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Total Children</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="37156f89-bbe8-4213-b263-2683ce64dd11">
+      <ID>Yearly Income</ID>
+      <Name>Yearly Income</Name>
+      <Type>Double</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="343ec830-cdd8-4e06-be50-b51415c23a28">
+        <CubeID>TargetMailCube</CubeID>
+        <CubeDimensionID>TargetMailDim</CubeDimensionID>
+        <AttributeID>Yearly Income</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="45b4925d-b101-42f9-8e30-813d820027b9">
+      <ID>Bike Buyer</ID>
+      <Name>Bike Buyer</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="764e5bea-3f17-42a9-a8b0-6325c976e8cd">
+        <MeasureID>Bike Buyer</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="d54221f7-a44d-4ea6-8390-035edbf4e59e">
+      <ID>TK448 Ch09 Cube Clustering</ID>
+      <Name>TK448 Ch09 Cube Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Sequence_Clustering</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>CLUSTER_COUNT</Name>
+          <Value xsi:type="xsd:int">4</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="69097e11-fb49-4076-b012-a99ac7dfff58">
+          <ID>Customer Key</ID>
+          <Name>Customer Key</Name>
+          <SourceColumnID>Customer Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="85d2860b-13ce-4a1c-9bc8-bececd495d0b">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a6fae267-97fa-47c4-b68c-4ac82a9d994d">
+          <ID>Commute Distance</ID>
+          <Name>Commute Distance</Name>
+          <SourceColumnID>Commute Distance</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7e8b6662-bedb-4a3c-9d66-c84fc204cdda">
+          <ID>English Education</ID>
+          <Name>English Education</Name>
+          <SourceColumnID>English Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="36e2e845-5ae1-419a-9c5a-0dc854ec6782">
+          <ID>English Occupation</ID>
+          <Name>English Occupation</Name>
+          <SourceColumnID>English Occupation</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4decba29-5a22-4347-9ced-da9cb08be078">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="554ba465-7c7f-4e72-94f7-17a1d73905a6">
+          <ID>House Owner Flag</ID>
+          <Name>House Owner Flag</Name>
+          <SourceColumnID>House Owner Flag</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="68f84167-c785-442e-a16b-b2f618c0460e">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="af518993-de07-489b-b2a1-c5dbafb0c32d">
+          <ID>Number Cars Owned</ID>
+          <Name>Number Cars Owned</Name>
+          <SourceColumnID>Number Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1dad6f99-7fcc-4182-844e-709d8ef026db">
+          <ID>Number Children At Home</ID>
+          <Name>Number Children At Home</Name>
+          <SourceColumnID>Number Children At Home</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="051f8c68-5453-4a3e-a5b7-90e2b949ca66">
+          <ID>Region</ID>
+          <Name>Region</Name>
+          <SourceColumnID>Region</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3301ea49-ee0e-4519-8f5b-75642ba9a5b4">
+          <ID>Total Children</ID>
+          <Name>Total Children</Name>
+          <SourceColumnID>Total Children</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="25685ada-8d3f-465d-aae5-cba778cb792b">
+          <ID>Yearly Income</ID>
+          <Name>Yearly Income</Name>
+          <SourceColumnID>Yearly Income</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a1588a4c-4091-4548-ad1a-6233f9fe1275">
+          <ID>Bike Buyer</ID>
+          <Name>Bike Buyer</Name>
+          <SourceColumnID>Bike Buyer</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

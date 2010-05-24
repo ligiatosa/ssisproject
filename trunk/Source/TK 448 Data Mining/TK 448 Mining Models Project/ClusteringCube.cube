@@ -1,0 +1,174 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27462f7b-e4d3-4b83-90e8-bf6d6b4f80bc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ClusteringCube</ID>
+  <Name>ClusteringCube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="b814d039-5dc7-4916-b4dd-0189a3cc23f9">
+      <ID>TargetMailDim</ID>
+      <Name>TargetMailDim</Name>
+      <DimensionID>TargetMailDim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99818333-0152-4a66-81a5-7547a3bc9471">
+          <AttributeID>Customer Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd4ff05b-b9ab-4adb-9af8-446de0030703">
+          <AttributeID>Marital Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5295412d-95d3-47c3-ac4e-74f0d50b05a4">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="718672ad-6aee-4d61-b7a8-44ffcd210ab7">
+          <AttributeID>Yearly Income</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61ede754-e57a-40ef-9a8f-a8b803990d06">
+          <AttributeID>Total Children</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ac2705b-c6d1-4725-b997-ea930c883f85">
+          <AttributeID>Number Children At Home</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12696b45-2242-4f04-bbb0-24652d512464">
+          <AttributeID>English Education</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72fb35b0-fbed-4df2-a91b-9e12b2de5622">
+          <AttributeID>English Occupation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7f0e4b0f-af5b-4290-a205-70377fece357">
+          <AttributeID>House Owner Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="494b81d2-2b4c-45ef-a5fc-f0b5b824d4e2">
+          <AttributeID>Number Cars Owned</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a5bc92d-1da4-48f4-8a62-3197fd085232">
+          <AttributeID>Commute Distance</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4e103b7-e14f-45a4-9acd-d96ecb4c94a7">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61609d7f-0d2d-46c3-a0eb-55b434dc9856">
+          <AttributeID>Age</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ea4e6ed7-a189-497d-803c-12ad6b73ef3e">
+      <ID>CustomerClusteringDim</ID>
+      <Name>CustomerClusteringDim</Name>
+      <DimensionID>CustomerClusteringDim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="36f990b5-3d64-43bf-a412-a160655845ee">
+          <AttributeID>ATTRIBUTE_NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a59ddb53-6120-4fd0-a252-4e6d198982a3">
+          <AttributeID>PARENT_UNIQUE_NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="64d9a214-4e01-427d-be67-5da426db269a">
+          <AttributeID>NODE_RULE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="40ae1524-2ce7-45db-ae01-ecf0fa27c520">
+          <AttributeID>NODE_SUPPORT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b75d7682-dd38-4093-9279-325d353cf2fc">
+          <AttributeID>NODE_UNIQUE_NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3e8aee17-4495-40ab-b5b8-4ce1381753aa">
+      <ID>v Target Mail</ID>
+      <Name>v Target Mail</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fd70e3d6-fa54-49d4-9084-daad530add55">
+          <ID>Bike Buyer</ID>
+          <Name>Bike Buyer</Name>
+          <Source dwd:design-time-name="e0e9f1da-d088-47fb-976b-bbba31bf348d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a5ed91be-7c22-4a9d-bdf9-d83a2f918ab6">
+              <TableID>dbo_vTargetMail</TableID>
+              <ColumnID>BikeBuyer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="868f146a-b1f7-4991-bace-0f5c0297af20">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>TargetMailCube</CubeID>
+        <MeasureGroupID>v Target Mail</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="ec0382bd-cbba-48dd-840b-4f44e6d8f0ac">
+          <CubeDimensionID>TargetMailDim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a6dc9b99-1605-4c75-adcb-0307db655f1d">
+              <AttributeID>Customer Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d5eb3549-a2e3-4d83-ae59-f23d7cf93fcc">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d37d12e7-af9a-478c-936b-6acb368d6395">
+                    <TableID>dbo_vTargetMail</TableID>
+                    <ColumnID>CustomerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DataMiningMeasureGroupDimension" dwd:design-time-name="450baee9-0ea1-4a05-b3a4-69d5f0a956bd">
+          <CubeDimensionID>CustomerClusteringDim</CubeDimensionID>
+          <CaseCubeDimensionID>TargetMailDim</CaseCubeDimensionID>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="6b232350-7b21-48a6-9803-52736a8d5cab">
+    <DataSourceViewID>Adventure Works DW2008</DataSourceViewID>
+  </Source>
+</Cube>

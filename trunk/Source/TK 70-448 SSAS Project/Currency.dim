@@ -82,6 +82,7 @@
       <ID>Currency Key</ID>
       <Name>Currency</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>105</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="87733630-ae93-4014-aad7-a67250a57ce7">
           <DataType>Integer</DataType>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "TK 448 Mining Models Project", "TK 448 Mining Models Project\TK 448 Mining Models Project.dwproj", "{7B366B1E-CFE6-4460-8296-4A81F8712ABD}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "TK 70-448 SSRS DMX Project", "TK 70-448 SSRS DMX Project\TK 70-448 SSRS DMX Project.rptproj", "{DBC69647-303D-4669-A177-7CE5F7CD3ED1}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "TK 448 Algorithm Disabled", "TK 448 Algorithm Disabled\TK 448 Algorithm Disabled.dwproj", "{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Debug|Default.ActiveCfg = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Debug|Default.Build.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Debug|Default.Deploy.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.DebugLocal|Default.ActiveCfg = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.DebugLocal|Default.Build.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.DebugLocal|Default.Deploy.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Development|Default.ActiveCfg = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Development|Default.Build.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Development|Default.Deploy.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Release|Default.ActiveCfg = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Release|Default.Build.0 = Development
+		{7B366B1E-CFE6-4460-8296-4A81F8712ABD}.Release|Default.Deploy.0 = Development
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Debug|Default.ActiveCfg = Debug
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Debug|Default.Build.0 = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Debug|Default.Deploy.0 = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.DebugLocal|Default.Build.0 = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Development|Default.ActiveCfg = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Development|Default.Build.0 = DebugLocal
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Release|Default.ActiveCfg = Release
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Release|Default.Build.0 = Release
+		{DBC69647-303D-4669-A177-7CE5F7CD3ED1}.Release|Default.Deploy.0 = Release
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Debug|Default.ActiveCfg = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Debug|Default.Build.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Debug|Default.Deploy.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.DebugLocal|Default.ActiveCfg = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.DebugLocal|Default.Build.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.DebugLocal|Default.Deploy.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Development|Default.ActiveCfg = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Development|Default.Build.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Development|Default.Deploy.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Release|Default.ActiveCfg = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Release|Default.Build.0 = Development
+		{7A8184A2-AFE4-4E41-BDC6-5C17A7E4DE4E}.Release|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

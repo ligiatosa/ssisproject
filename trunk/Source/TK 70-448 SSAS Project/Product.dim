@@ -170,6 +170,7 @@
       <ID>Product Key</ID>
       <Name>Product</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>606</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a0a7bf56-a19a-4315-9680-894d13555bb7">
           <DataType>Integer</DataType>
@@ -306,6 +307,7 @@
     <Attribute dwd:design-time-name="eb3682d5-e59b-4e3b-b144-37651ba4877a">
       <ID>Product Subcategory Key</ID>
       <Name>Subcategory</Name>
+      <EstimatedCount>37</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="959d9dc7-58af-4707-8781-6c113a3ad427">
           <NullProcessing>UnknownMember</NullProcessing>
@@ -334,6 +336,7 @@
     <Attribute dwd:design-time-name="08a8497d-42f7-4eb3-9fe6-0d51b45ab797">
       <ID>Product Category Key</ID>
       <Name>Category</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="90bb18b2-ef1b-436c-83f1-ad42135dea14">
           <NullProcessing>UnknownMember</NullProcessing>

@@ -49,6 +49,15 @@
               <Partition>
                 <ID>Fact Internet Sales</ID>
               </Partition>
+              <Partition>
+                <ID>Internet Sales 2002</ID>
+              </Partition>
+              <Partition>
+                <ID>Internet Sales 2003</ID>
+              </Partition>
+              <Partition>
+                <ID>Internet Sales 2004</ID>
+              </Partition>
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
