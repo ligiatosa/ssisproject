@@ -56,6 +56,7 @@
       <ID>Sales Order Number</ID>
       <Name>Sales Order Number</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>60398</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f54e59ba-e35a-47fa-bf24-7a62f5e09f25">
           <DataType>WChar</DataType>

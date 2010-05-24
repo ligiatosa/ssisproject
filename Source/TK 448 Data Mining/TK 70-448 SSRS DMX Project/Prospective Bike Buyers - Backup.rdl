@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="TK 70-448 Data Mining">
+      <rd:DataSourceID>39bcf29d-8cfc-45c5-a554-0dc2474249c4</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>OLEDB-MD</DataProvider>
+        <ConnectString>Data Source=LPHAN5-1\SQL2K8;Initial Catalog="TK 448 Mining Models Project"</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>6bef0854-b7df-4187-8d8b-fc18d79f3f9d</rd:ReportID>
+  <Width>5in</Width>
+  <Body>
+    <Height>1in</Height>
+    <ColumnSpacing>0.5in</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Prospective Bike Buyers</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.36in</Height>
+      </Textbox>
+      <Table Name="table1">
+        <Top>0.36in</Top>
+        <Style />
+        <Header>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Value>Bike Buyer</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Value>Prospect Alternate Key</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <Value>Last Name</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <Value>Prediction Probability</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.22in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Value>
+                      </Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ProspectAlternateKey">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>ProspectAlternateKey</rd:DefaultName>
+                      <Value>=Fields!ProspectAlternateKey.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="LastName">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>LastName</rd:DefaultName>
+                      <Value>=Fields!LastName.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Prediction_Probability">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>Prediction_Probability</rd:DefaultName>
+                      <Value>=Fields!Prediction_Probability.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.21in</Height>
+            </TableRow>
+          </TableRows>
+          <Visibility>
+            <Hidden>true</Hidden>
+            <ToggleItem>Bike_Buyer</ToggleItem>
+          </Visibility>
+        </Details>
+        <TableColumns>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+        <DataSetName>DataSet1</DataSetName>
+        <TableGroups>
+          <TableGroup>
+            <Grouping Name="table1_Bike_Buyer">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Bike_Buyer.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!Bike_Buyer.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Bike_Buyer">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>Bike_Buyer</rd:DefaultName>
+                          <Value>=Fields!Bike_Buyer.Value</Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.21in</Height>
+                          <Width>1in</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox7">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>textbox7</rd:DefaultName>
+                          <Value>
+                          </Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.21in</Height>
+                          <Width>1in</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox8">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>textbox8</rd:DefaultName>
+                          <Value>
+                          </Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.21in</Height>
+                          <Width>1in</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox9">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>textbox9</rd:DefaultName>
+                          <Value>
+                          </Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.21in</Height>
+                          <Width>1in</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.21in</Height>
+                </TableRow>
+              </TableRows>
+            </Header>
+          </TableGroup>
+        </TableGroups>
+      </Table>
+    </ReportItems>
+  </Body>
+  <Language>en-US</Language>
+  <LeftMargin>1in</LeftMargin>
+  <RightMargin>1in</RightMargin>
+  <TopMargin>1in</TopMargin>
+  <BottomMargin>1in</BottomMargin>
+  <PageWidth>8.5in</PageWidth>
+  <PageHeight>11in</PageHeight>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Bike_Buyer">
+          <DataField>Bike Buyer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProspectAlternateKey">
+          <DataField>ProspectAlternateKey</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Prediction_Probability">
+          <DataField>Prediction Probability</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>TK 70-448 Data Mining</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT
+  [TK448 Ch09 Prediction Decision Trees].[Bike Buyer],
+  t.[ProspectAlternateKey],
+  t.[LastName],
+  (PredictProbability([TK448 Ch09 Prediction Decision Trees].[Bike Buyer])) as [Prediction Probability]
+From
+  [TK448 Ch09 Prediction Decision Trees]
+PREDICTION JOIN
+  OPENQUERY([Adventure Works DW2008],
+    'SELECT
+      [ProspectAlternateKey],
+      [LastName],
+      [MaritalStatus],
+      [Gender],
+      [YearlyIncome],
+      [TotalChildren],
+      [NumberChildrenAtHome],
+      [HouseOwnerFlag],
+      [NumberCarsOwned]
+    FROM
+      [dbo].[ProspectiveBuyer]
+    ') AS t
+ON
+  [TK448 Ch09 Prediction Decision Trees].[Marital Status] = t.[MaritalStatus] AND
+  [TK448 Ch09 Prediction Decision Trees].[Gender] = t.[Gender] AND
+  [TK448 Ch09 Prediction Decision Trees].[Yearly Income] = t.[YearlyIncome] AND
+  [TK448 Ch09 Prediction Decision Trees].[Total Children] = t.[TotalChildren] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Children At Home] = t.[NumberChildrenAtHome] AND
+  [TK448 Ch09 Prediction Decision Trees].[House Owner Flag] = t.[HouseOwnerFlag] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Cars Owned] = t.[NumberCarsOwned]</CommandText>
+        <Timeout>0</Timeout>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DMX</CommandType>
+            <QuerySpecification xsi:type="DMXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Column">
+                      <ColumnName>Bike Buyer</ColumnName>
+                    </ID>
+                    <ItemCaption>Bike Buyer</ItemCaption>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Column">
+                      <ColumnName>ProspectAlternateKey</ColumnName>
+                    </ID>
+                    <ItemCaption>ProspectAlternateKey</ItemCaption>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Column">
+                      <ColumnName>LastName</ColumnName>
+                    </ID>
+                    <ItemCaption>LastName</ItemCaption>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Column">
+                      <ColumnName>Prediction Probability</ColumnName>
+                    </ID>
+                    <ItemCaption>Prediction Probability</ItemCaption>
+                  </Item>
+                </Items>
+              </Select>
+              <Data>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;DataminingQueryBuilderState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;SelectTablesControlState&gt;
+    &lt;Tables&gt;
+      &lt;SelectedTableInfo&gt;
+        &lt;datasourceName&gt;Adventure Works DW2008&lt;/datasourceName&gt;
+        &lt;dsvId&gt;Adventure Works DW2008&lt;/dsvId&gt;
+        &lt;tableType&gt;Table&lt;/tableType&gt;
+        &lt;schemaName&gt;dbo&lt;/schemaName&gt;
+        &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+        &lt;friendlyTableName&gt;ProspectiveBuyer&lt;/friendlyTableName&gt;
+      &lt;/SelectedTableInfo&gt;
+    &lt;/Tables&gt;
+  &lt;/SelectTablesControlState&gt;
+  &lt;IsSingletonQuery&gt;false&lt;/IsSingletonQuery&gt;
+  &lt;View&gt;Design&lt;/View&gt;
+  &lt;QueryText&gt;SELECT
+  [TK448 Ch09 Prediction Decision Trees].[Bike Buyer],
+  t.[ProspectAlternateKey],
+  t.[LastName],
+  (PredictProbability([TK448 Ch09 Prediction Decision Trees].[Bike Buyer])) as [Prediction Probability]
+From
+  [TK448 Ch09 Prediction Decision Trees]
+PREDICTION JOIN
+  OPENQUERY([Adventure Works DW2008],
+    'SELECT
+      [ProspectAlternateKey],
+      [LastName],
+      [MaritalStatus],
+      [Gender],
+      [YearlyIncome],
+      [TotalChildren],
+      [NumberChildrenAtHome],
+      [HouseOwnerFlag],
+      [NumberCarsOwned]
+    FROM
+      [dbo].[ProspectiveBuyer]
+    ') AS t
+ON
+  [TK448 Ch09 Prediction Decision Trees].[Marital Status] = t.[MaritalStatus] AND
+  [TK448 Ch09 Prediction Decision Trees].[Gender] = t.[Gender] AND
+  [TK448 Ch09 Prediction Decision Trees].[Yearly Income] = t.[YearlyIncome] AND
+  [TK448 Ch09 Prediction Decision Trees].[Total Children] = t.[TotalChildren] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Children At Home] = t.[NumberChildrenAtHome] AND
+  [TK448 Ch09 Prediction Decision Trees].[House Owner Flag] = t.[HouseOwnerFlag] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Cars Owned] = t.[NumberCarsOwned]&lt;/QueryText&gt;
+  &lt;DatabaseId&gt;TK 448 Mining Models Project&lt;/DatabaseId&gt;
+  &lt;MiningStructureId&gt;TK448 Ch09&lt;/MiningStructureId&gt;
+  &lt;MiningModelId&gt;TK448 Ch09 Prediction Decision Trees&lt;/MiningModelId&gt;
+  &lt;ColumnMappings&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Marital Status&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;MaritalStatus&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Gender&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;Gender&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Yearly Income&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;YearlyIncome&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Total Children&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;TotalChildren&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Number Children At Home&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;NumberChildrenAtHome&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;House Owner Flag&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;HouseOwnerFlag&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+    &lt;ColumnMapping&gt;
+      &lt;miningModelColumnId&gt;Number Cars Owned&lt;/miningModelColumnId&gt;
+      &lt;tableName&gt;dbo_ProspectiveBuyer&lt;/tableName&gt;
+      &lt;dataColumnName&gt;NumberCarsOwned&lt;/dataColumnName&gt;
+    &lt;/ColumnMapping&gt;
+  &lt;/ColumnMappings&gt;
+  &lt;GridRows&gt;
+    &lt;GridRow&gt;
+      &lt;type&gt;MiningColumn&lt;/type&gt;
+      &lt;parentType&gt;MiningModel&lt;/parentType&gt;
+      &lt;parentId&gt;TK448 Ch09 Prediction Decision Trees&lt;/parentId&gt;
+      &lt;field&gt;Bike Buyer&lt;/field&gt;
+      &lt;alias /&gt;
+      &lt;show&gt;true&lt;/show&gt;
+      &lt;group /&gt;
+      &lt;andOr /&gt;
+      &lt;criteria /&gt;
+    &lt;/GridRow&gt;
+    &lt;GridRow&gt;
+      &lt;type&gt;DataColumn&lt;/type&gt;
+      &lt;parentType&gt;DataTable&lt;/parentType&gt;
+      &lt;parentId&gt;dbo_ProspectiveBuyer&lt;/parentId&gt;
+      &lt;field&gt;ProspectAlternateKey&lt;/field&gt;
+      &lt;alias /&gt;
+      &lt;show&gt;true&lt;/show&gt;
+      &lt;group /&gt;
+      &lt;andOr /&gt;
+      &lt;criteria /&gt;
+    &lt;/GridRow&gt;
+    &lt;GridRow&gt;
+      &lt;type&gt;DataColumn&lt;/type&gt;
+      &lt;parentType&gt;DataTable&lt;/parentType&gt;
+      &lt;parentId&gt;dbo_ProspectiveBuyer&lt;/parentId&gt;
+      &lt;field&gt;LastName&lt;/field&gt;
+      &lt;alias /&gt;
+      &lt;show&gt;true&lt;/show&gt;
+      &lt;group /&gt;
+      &lt;andOr /&gt;
+      &lt;criteria /&gt;
+    &lt;/GridRow&gt;
+    &lt;GridRow&gt;
+      &lt;type&gt;PredictFunction&lt;/type&gt;
+      &lt;parentType&gt;None&lt;/parentType&gt;
+      &lt;field&gt;PredictProbability&lt;/field&gt;
+      &lt;alias&gt;Prediction Probability&lt;/alias&gt;
+      &lt;show&gt;true&lt;/show&gt;
+      &lt;group /&gt;
+      &lt;andOr /&gt;
+      &lt;criteria&gt;[TK448 Ch09 Prediction Decision Trees].[Bike Buyer]&lt;/criteria&gt;
+    &lt;/GridRow&gt;
+  &lt;/GridRows&gt;
+&lt;/DataminingQueryBuilderState&gt;</Data>
+            </QuerySpecification>
+            <Query>
+              <Statement>SELECT
+  [TK448 Ch09 Prediction Decision Trees].[Bike Buyer],
+  t.[ProspectAlternateKey],
+  t.[LastName],
+  (PredictProbability([TK448 Ch09 Prediction Decision Trees].[Bike Buyer])) as [Prediction Probability]
+From
+  [TK448 Ch09 Prediction Decision Trees]
+PREDICTION JOIN
+  OPENQUERY([Adventure Works DW2008],
+    'SELECT
+      [ProspectAlternateKey],
+      [LastName],
+      [MaritalStatus],
+      [Gender],
+      [YearlyIncome],
+      [TotalChildren],
+      [NumberChildrenAtHome],
+      [HouseOwnerFlag],
+      [NumberCarsOwned]
+    FROM
+      [dbo].[ProspectiveBuyer]
+    ') AS t
+ON
+  [TK448 Ch09 Prediction Decision Trees].[Marital Status] = t.[MaritalStatus] AND
+  [TK448 Ch09 Prediction Decision Trees].[Gender] = t.[Gender] AND
+  [TK448 Ch09 Prediction Decision Trees].[Yearly Income] = t.[YearlyIncome] AND
+  [TK448 Ch09 Prediction Decision Trees].[Total Children] = t.[TotalChildren] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Children At Home] = t.[NumberChildrenAtHome] AND
+  [TK448 Ch09 Prediction Decision Trees].[House Owner Flag] = t.[HouseOwnerFlag] AND
+  [TK448 Ch09 Prediction Decision Trees].[Number Cars Owned] = t.[NumberCarsOwned]</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

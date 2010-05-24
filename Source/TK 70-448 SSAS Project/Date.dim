@@ -119,6 +119,7 @@
       <Name>Date</Name>
       <Type>Date</Type>
       <Usage>Key</Usage>
+      <EstimatedCount>1188</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="94b98501-b860-4a8a-90c5-167b439b6d44">
           <DataType>Integer</DataType>
@@ -152,6 +153,7 @@
       <ID>Month Number Of Year</ID>
       <Name>Month Name</Name>
       <Type>Months</Type>
+      <EstimatedCount>39</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="40357a8e-b26d-4d10-a29a-1029d79c4e46">
           <DataType>UnsignedTinyInt</DataType>
@@ -188,6 +190,7 @@
       <ID>Calendar Quarter</ID>
       <Name>Calendar Quarter</Name>
       <Type>Quarters</Type>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="fe0965a3-4a34-4411-9a3b-abfe4d51b203">
           <DataType>UnsignedTinyInt</DataType>
@@ -224,6 +227,7 @@
       <ID>Calendar Year</ID>
       <Name>Calendar Year</Name>
       <Type>Years</Type>
+      <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="833b1bfa-81d9-4e95-847f-3c99548ae9cb">
           <DataType>SmallInt</DataType>
@@ -238,6 +242,7 @@
       <ID>Fiscal Quarter</ID>
       <Name>Fiscal Quarter</Name>
       <Type>FiscalQuarters</Type>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="11808d30-be6d-44d2-97ec-35931a5b9770">
           <DataType>UnsignedTinyInt</DataType>
@@ -274,6 +279,7 @@
       <ID>Fiscal Year</ID>
       <Name>Fiscal Year</Name>
       <Type>FiscalYears</Type>
+      <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="57f19823-a451-4520-abed-4a3f825135ef">
           <DataType>SmallInt</DataType>

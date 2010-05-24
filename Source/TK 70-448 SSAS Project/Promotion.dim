@@ -82,6 +82,7 @@
       <ID>Promotion Key</ID>
       <Name>Promotion</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>16</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="19018fe2-4001-4076-96c1-3aa0590b0a72">
           <DataType>Integer</DataType>

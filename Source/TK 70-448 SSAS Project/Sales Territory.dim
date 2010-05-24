@@ -99,11 +99,29 @@
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="738703ca-a1bb-422d-8f5c-49baf610bb23">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="e21e380b-c9e7-4f35-b601-74ee96fb8471">
+          <AttributeID>Sales Territory Group</AttributeID>
+          <DeniedSet>{[Sales Territory].[Sales Territory Group].&amp;[Europe]}</DeniedSet>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+  </DimensionPermissions>
   <Attributes>
     <Attribute dwd:design-time-name="689efb54-7b4e-40d4-880e-3aae5b75e198">
       <ID>Sales Territory Key</ID>
       <Name>Sales Territory Region</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>11</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a3cd6e17-3b7c-4141-9f9a-b0c1cf668a4d">
           <DataType>Integer</DataType>
@@ -131,6 +149,7 @@
     <Attribute dwd:design-time-name="26c38457-057d-4265-99fd-29e663c87e83">
       <ID>Sales Territory Country</ID>
       <Name>Sales Territory Country</Name>
+      <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f9e6df36-3d2a-4e13-9a61-21f7ea7a853f">
           <DataType>WChar</DataType>
@@ -152,6 +171,7 @@
     <Attribute dwd:design-time-name="640560e1-7370-4a84-9e50-9438bd0860ae">
       <ID>Sales Territory Group</ID>
       <Name>Sales Territory Group</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="6a2a9f9e-2ac2-4d6b-8db4-04cbdeb43858">
           <DataType>WChar</DataType>

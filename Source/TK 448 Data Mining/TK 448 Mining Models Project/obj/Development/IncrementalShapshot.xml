@@ -1,6 +1,6 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>TK 70-448 SSAS Project</Database>
+    <Database>TK 448 Mining Models Project</Database>
     <Server>LPHAN5-1\SQL2K8</Server>
     <ConnectionString>DataSource=LPHAN5-1\SQL2K8;Timeout=0</ConnectionString>
   </Target>
@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,106 +19,99 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>6g32Wj/06WOxpd96CIHXKg==5/20/2010 4:55:41 PM5/20/2010 4:55:41 PM</TimeStamp>
+        <TimeStamp>x1tu8Og9LLfq2e6FDz8fSg==5/24/2010 2:30:07 PM5/24/2010 2:30:06 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2008</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>X1jKPlalF3Yt0jEJP3QgAg==5/21/2010 4:24:55 PM5/20/2010 4:58:23 PM</TimeStamp>
+        <TimeStamp>fY1yglYjfWqMAuxwG5Dr8g==5/24/2010 4:49:36 PM5/24/2010 2:31:23 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2008</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hEdhoAAQSqz5/Y9JTtFPug==5/24/2010 10:26:52 AM5/20/2010 5:32:40 PM</TimeStamp>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>9nyyFhZx0XXMdV8r1JPIdA==5/24/2010 4:38:35 PM5/24/2010 4:38:34 PM</TimeStamp>
         <ID>
-          <String>Date</String>
+          <String>CustomerClusteringDim_DMDSV</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6iHV+NI6eZ3tAhgz7grX+g==5/24/2010 10:26:52 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <TimeStamp>yUP2TFlZjWYihSuv4OMjiQ==5/24/2010 2:42:03 PM5/24/2010 2:38:34 PM</TimeStamp>
         <ID>
-          <String>Currency</String>
+          <String>TargetMailDim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Hcu6tsImtgo49fzt6BSrnw==5/24/2010 10:26:52 AM5/20/2010 5:32:41 PM</TimeStamp>
+        <TimeStamp>8zfgmXQgzxVPobIHeC0E2g==5/24/2010 4:38:35 PM5/24/2010 4:38:34 PM</TimeStamp>
         <ID>
-          <String>Customer</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>rJWdov6USHN/FJ+Yy6nZFQ==5/24/2010 11:15:21 AM5/20/2010 5:32:41 PM</TimeStamp>
-        <ID>
-          <String>Sales Territory</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>KUPZUktKqgpFQeBNtCZLiQ==5/24/2010 10:26:52 AM5/20/2010 5:32:41 PM</TimeStamp>
-        <ID>
-          <String>Promotion</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>lI2juWqLOJaxnXlJVg1wEQ==5/24/2010 10:26:52 AM5/20/2010 5:32:41 PM</TimeStamp>
-        <ID>
-          <String>Fact Internet Sales</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Yw3tNlyrsjFYntqM8mBKZA==5/21/2010 11:12:27 AM5/20/2010 5:32:41 PM</TimeStamp>
-        <ID>
-          <String>Sales Reason</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>0sWuNCSIthvg5D4XSfcrlg==5/24/2010 10:26:52 AM5/21/2010 10:44:52 AM</TimeStamp>
-        <ID>
-          <String>Product</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bItxf7zyFtKnqd4WXkzK7w==5/24/2010 10:26:52 AM5/21/2010 4:26:23 PM</TimeStamp>
-        <ID>
-          <String>Internet Sales Order Details</String>
+          <String>CustomerClusteringDim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>ORoJO1jTBkv8VVF3aVTSvQ==5/24/2010 11:24:00 AM5/20/2010 5:32:40 PMW6Vn8SfN8w2eYmFlMiMZDA==5/24/2010 11:10:31 AM5/20/2010 5:32:40 PM</TimeStamp>
+        <TimeStamp>QVMyuOecHdpzNgWZ5x3Bmg==5/24/2010 4:00:02 PM5/24/2010 2:38:33 PMfWUlgthfpCwDnguw8xnOFg==5/24/2010 2:38:35 PM5/24/2010 2:38:33 PM</TimeStamp>
         <ID>
-          <String>Adventure Works</String>
+          <String>TargetMailCube</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>L87EOku5xJwNBtbFXOfnJQ==5/24/2010 11:23:59 AM5/24/2010 11:12:06 AM</TimeStamp>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>EPBf+Yzy5yfcfk3+2g2sOg==5/24/2010 4:38:35 PM5/24/2010 4:38:35 PM0gmdaVo4TX+whMc0gli57w==5/24/2010 4:38:35 PM5/24/2010 4:38:35 PM</TimeStamp>
         <ID>
-          <String>Role</String>
+          <String>ClusteringCube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>+c4G1CFL2TQ9fCFDBpCBfw==5/24/2010 4:44:24 PM5/24/2010 3:20:48 PM</TimeStamp>
+        <ID>
+          <String>TK448 Ch09</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>rUqFYZj72zb7rjX7AIV3Kw==5/24/2010 4:27:32 PM5/24/2010 4:13:56 PM</TimeStamp>
+        <ID>
+          <String>TK448 Ch09 Association</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>pAieMyw/MjdUUOF8UTtvZw==5/24/2010 4:15:44 PM5/24/2010 4:15:44 PM</TimeStamp>
+        <ID>
+          <String>TK448 Ch09 Sequence</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>0I2LlyBBO7xaScQy4GLMUA==5/24/2010 4:28:56 PM5/24/2010 4:17:56 PM</TimeStamp>
+        <ID>
+          <String>TK448 Ch09 Forecasting</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>aIYazq3Dq66gcuKtjQEW3w==5/24/2010 4:29:44 PM5/24/2010 4:25:47 PM</TimeStamp>
+        <ID>
+          <String>TK448 Ch09 Cube Clustering</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>TW46yJ5H4h6GFEE4EiMhHw==5/24/2010 11:15:21 AM5/20/2010 4:53:08 PM</TimeStamp>
+      <TimeStamp>pAJVPlA6da2ez2mVA6ziGg==5/24/2010 2:27:49 PM5/24/2010 2:27:24 PM</TimeStamp>
       <ID>
-        <String>TK 70-448 SSAS Project</String>
+        <String>TK 448 Mining Models Project</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2010-05-24T04:24:09Z</LastDeployed>
+  <LastDeployed>2010-05-24T09:49:37Z</LastDeployed>
 </DeploymentSnapshot>

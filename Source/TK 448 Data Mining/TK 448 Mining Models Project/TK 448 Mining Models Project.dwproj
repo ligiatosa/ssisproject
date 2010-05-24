@@ -3,57 +3,39 @@
   <SchemaVersion>9.0.2.10</SchemaVersion>
   <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
   <Database>
-    <Name>TK 70-448 SSAS Project.database</Name>
-    <FullPath>TK 70-448 SSAS Project.database</FullPath>
+    <Name>TK 448 Mining Models Project.database</Name>
+    <FullPath>TK 448 Mining Models Project.database</FullPath>
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Adventure Works.cube</Name>
-      <FullPath>Adventure Works.cube</FullPath>
+      <Name>TargetMailCube.cube</Name>
+      <FullPath>TargetMailCube.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Adventure Works.partitions</Name>
-          <FullPath>Adventure Works.partitions</FullPath>
+          <Name>TargetMailCube.partitions</Name>
+          <FullPath>TargetMailCube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ClusteringCube.cube</Name>
+      <FullPath>ClusteringCube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>ClusteringCube.partitions</Name>
+          <FullPath>ClusteringCube.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
+      <Name>TargetMailDim.dim</Name>
+      <FullPath>TargetMailDim.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Currency.dim</Name>
-      <FullPath>Currency.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Customer.dim</Name>
-      <FullPath>Customer.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Sales Territory.dim</Name>
-      <FullPath>Sales Territory.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Promotion.dim</Name>
-      <FullPath>Promotion.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Fact Internet Sales.dim</Name>
-      <FullPath>Fact Internet Sales.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Sales Reason.dim</Name>
-      <FullPath>Sales Reason.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Product.dim</Name>
-      <FullPath>Product.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Internet Sales Order Details.dim</Name>
-      <FullPath>Internet Sales Order Details.dim</FullPath>
+      <Name>CustomerClusteringDim.dim</Name>
+      <FullPath>CustomerClusteringDim.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -67,13 +49,33 @@
       <Name>Adventure Works DW2008.dsv</Name>
       <FullPath>Adventure Works DW2008.dsv</FullPath>
     </ProjectItem>
-  </DataSourceViews>
-  <Roles>
     <ProjectItem>
-      <Name>Adventure Works.role</Name>
-      <FullPath>Adventure Works.role</FullPath>
+      <Name>CustomerClusteringDim_DMDSV.dsv</Name>
+      <FullPath>CustomerClusteringDim_DMDSV.dsv</FullPath>
     </ProjectItem>
-  </Roles>
+  </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>TK448 Ch09.dmm</Name>
+      <FullPath>TK448 Ch09.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TK448 Ch09 Association.dmm</Name>
+      <FullPath>TK448 Ch09 Association.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TK448 Ch09 Sequence.dmm</Name>
+      <FullPath>TK448 Ch09 Sequence.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TK448 Ch09 Forecasting.dmm</Name>
+      <FullPath>TK448 Ch09 Forecasting.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TK448 Ch09 Cube Clustering.dmm</Name>
+      <FullPath>TK448 Ch09 Cube Clustering.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

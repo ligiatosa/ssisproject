@@ -1,0 +1,66 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>Adventure Works DW2008</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=LPHAN5-1\SQL2K8;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2008</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode>Default</ImpersonationMode>
+          <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>TargetMailDim</ID>
+      </Dimension>
+      <Dimension>
+        <ID>CustomerClusteringDim</ID>
+      </Dimension>
+    </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>TK448 Ch09</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>TK448 Ch09 Association</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>TK448 Ch09 Sequence</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>TK448 Ch09 Forecasting</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>TK448 Ch09 Cube Clustering</ID>
+      </MiningStructure>
+    </MiningStructures>
+    <Cubes>
+      <Cube>
+        <ID>TargetMailCube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>v Target Mail</ID>
+            <Partitions>
+              <Partition>
+                <ID>v Target Mail</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>ClusteringCube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>v Target Mail</ID>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode>Default</ImpersonationMode>
+      <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

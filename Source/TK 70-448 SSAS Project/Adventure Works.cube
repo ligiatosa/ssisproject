@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="70" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="279" scrolltop="-3015" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20188" y="13361" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="70" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1658" scrolltop="-2783" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20188" y="13361" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -595,11 +595,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>279</Value>
+      <Value>-1658</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-3015</Value>
+      <Value>-2783</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1032,6 +1032,17 @@
       </Attributes>
     </Dimension>
   </Dimensions>
+  <CubePermissions>
+    <CubePermission dwd:design-time-name="55004d87-f9e9-48f4-bd21-83b9c43f31ed">
+      <ID>CubePermission</ID>
+      <Name>CubePermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <ReadSourceData>Allowed</ReadSourceData>
+    </CubePermission>
+  </CubePermissions>
   <Perspectives>
     <Perspective dwd:design-time-name="d796d499-3549-42b9-8d48-8b031303e4ea">
       <ID>Perspective</ID>
@@ -1885,7 +1896,7 @@
       <Measures>
         <Measure dwd:design-time-name="58019029-c5b0-4079-ae42-1ced115cc2ce">
           <ID>Order Quantity</ID>
-          <Name>Order Quantity</Name>
+          <Name>Internet Order Quantity</Name>
           <Source dwd:design-time-name="9a2e3e52-188e-4089-a346-bb172bdc03cd">
             <DataType>Integer</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="46c308ba-9f49-42be-bdc9-b5d3d9da208b">
@@ -1897,7 +1908,7 @@
         </Measure>
         <Measure dwd:design-time-name="681801b9-28a2-4cb4-9d77-1dc9c9ec6bf0">
           <ID>Unit Price</ID>
-          <Name>Unit Price</Name>
+          <Name>Internet Unit Price</Name>
           <Source dwd:design-time-name="852c66ba-1fa5-4283-bd7b-a9bf1e862cb0">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="74237e4e-f37e-476b-90a4-dee34335df7c">
@@ -1909,7 +1920,7 @@
         </Measure>
         <Measure dwd:design-time-name="68e2fa85-a1e0-458f-acdc-6f624628ef63">
           <ID>Extended Amount</ID>
-          <Name>Extended Amount</Name>
+          <Name>Internet Extended Amount</Name>
           <Source dwd:design-time-name="a63af1e4-59e7-44af-af86-fd44bed59300">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="d2ac9d08-ffc8-4218-8d9e-01af68935ec6">
@@ -1921,7 +1932,7 @@
         </Measure>
         <Measure dwd:design-time-name="99ee6597-92df-41f0-9068-8c18077c46c3">
           <ID>Discount Amount</ID>
-          <Name>Discount Amount</Name>
+          <Name>Internet Discount Amount</Name>
           <Source dwd:design-time-name="51f047bf-4550-44d7-aca9-98d42f5a1024">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="46b52f1b-5de7-4a74-8697-9e2ae3143d3b">
@@ -1933,7 +1944,7 @@
         </Measure>
         <Measure dwd:design-time-name="3506dc3f-79ce-48e7-b7ea-d00ca0c2583a">
           <ID>Sales Amount</ID>
-          <Name>Sales Amount</Name>
+          <Name>Internet Sales Amount</Name>
           <Source dwd:design-time-name="faf39645-072f-4c60-a6d3-ef3f00542b7c">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="8815d603-4ff2-4b41-bc22-ec72fce468d9">
@@ -1958,6 +1969,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
+      <EstimatedRows>60398</EstimatedRows>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
         <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4df8ba96-8e64-424d-a0e4-549187fe5c67">
@@ -2162,6 +2174,7 @@
         </Dimension>
       </Dimensions>
       <Partitions />
+      <AggregationDesigns />
     </MeasureGroup>
     <MeasureGroup dwd:design-time-name="02b3da41-9fb0-42c3-8c78-cca0e8f623b3">
       <ID>Internet Sales Reason</ID>
@@ -2888,6 +2901,40 @@
   <Source dwd:design-time-name="cae03236-3a84-478c-8bd6-58eaf89f1625">
     <DataSourceViewID>Adventure Works DW2008</DataSourceViewID>
   </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="17e03e2b-4058-476d-b8b9-6f68c6adbaaf">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Sales Amount]
+ AS [Measures].[Internet Sales Amount] +
+[Measures].[Reseller Sales Amount], 
+FORMAT_STRING = "Currency", 
+VISIBLE = 1  ; 
+CREATE DYNAMIC SET CURRENTCUBE.[Top 50 Most Profitable Customers]
+ AS TopCount (
+(EXISTING [Customer].[Customer].[Customer].Members),
+50, [Measures].[Internet Sales Amount]) ; </Text>
+        </Command>
+      </Commands>
+      <CalculationProperties>
+        <CalculationProperty dwd:design-time-name="e395401c-c765-4f06-bf2b-67417bd0e0a3">
+          <CalculationReference>[Measures].[Sales Amount]</CalculationReference>
+          <CalculationType>Member</CalculationType>
+          <DisplayFolder>Sales Summary</DisplayFolder>
+        </CalculationProperty>
+      </CalculationProperties>
+    </MdxScript>
+  </MdxScripts>
   <Kpis>
     <Kpi dwd:design-time-name="69f96283-43fc-4365-9255-34bdb6b6b83f">
       <ID>KPI</ID>

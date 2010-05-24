@@ -1,0 +1,165 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ad82b470-3240-47ca-a31a-95b679bf41d2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TK448 Ch09 Sequence</ID>
+  <Name>TK448 Ch09 Sequence</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_vAssocSeqOrders</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d162d670-78ff-4784-8ed0-971878c34f9e">
+    <DataSourceViewID>Adventure Works DW2008</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="60569ccf-d564-4ef4-bc57-380ed413f3d0">
+      <ID>Order Number</ID>
+      <Name>Order Number</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f0e8ad5-5030-44f8-bb3f-ac99fcaf81c7">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4098a2c0-7c24-4290-8438-535fbfd2f2d5">
+            <TableID>dbo_vAssocSeqOrders</TableID>
+            <ColumnID>OrderNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="105e44da-8a20-44b2-95be-b4053b07e67b">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value></Value>
+        </Annotation>
+      </Annotations>
+      <ID>v Assoc Seq Line Items</ID>
+      <Name>v Assoc Seq Line Items</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="b8e194b4-ece8-4ff3-b6ba-70e824f518aa">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <NullProcessing>Error</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a664552-370f-4e6f-93b7-59a72358fcde">
+            <TableID>dbo_vAssocSeqLineItems</TableID>
+            <ColumnID>OrderNumber</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="08d2bcf9-d461-409d-aa4e-463be2eebc52">
+          <ID>Line Number</ID>
+          <Name>Line Number</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key Sequence</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="c115b620-9fa0-4f96-bf47-75eff4eb3d7d">
+              <DataType>UnsignedTinyInt</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="4389ba12-2e79-478a-86b7-e230cbf5a9bc">
+                <TableID>dbo_vAssocSeqLineItems</TableID>
+                <ColumnID>LineNumber</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5acf02b3-b818-43f2-a256-cddd1fb55d4f">
+          <ID>Model</ID>
+          <Name>Model</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="d97c26e4-53ce-4592-b504-5feb6786e440">
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="f85a666c-1482-473b-8472-ba15e39187ab">
+                <TableID>dbo_vAssocSeqLineItems</TableID>
+                <ColumnID>Model</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="8507c1bf-b8b4-4909-ab51-3fbee497f537">
+      <ID>TK448 Ch09 Sequence Clustering</ID>
+      <Name>TK448 Ch09 Sequence Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Sequence_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="cbc822ca-1763-45f7-b1a9-747caaff2fb2">
+          <ID>Order Number</ID>
+          <Name>Order Number</Name>
+          <SourceColumnID>Order Number</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="f1328baf-378f-473e-bbfd-2076b54a9b3c">
+          <ID>v Assoc Seq Line Items</ID>
+          <Name>v Assoc Seq Line Items</Name>
+          <SourceColumnID>v Assoc Seq Line Items</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="3f05b3ac-5859-4d7b-95fb-330f9132954e">
+              <ID>Line Number</ID>
+              <Name>Line Number</Name>
+              <SourceColumnID>Line Number</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="3e4e2394-435b-4d16-969a-2c6f59860840">
+              <ID>Model</ID>
+              <Name>Model</Name>
+              <SourceColumnID>Model</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>
